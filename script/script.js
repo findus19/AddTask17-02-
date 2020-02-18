@@ -12,13 +12,13 @@ let flyAnimate = function(){
   count++;
   human.style.top = count + 'px';
   human.style.left = count + 100 + 'px';
-  tank.style.left = count*2 + 'px';
+  tank.style.left = count * 3.8 + 'px';
   if(count > 410){
     cancelAnimationFrame(flyInterval);
   }
 }
 
-let animate = false;
+let animate = true;
 reset.addEventListener('click', function(){
   tank.style.top =  130 + 'px';
   tank.style.left = 100 + 'px';
@@ -30,6 +30,7 @@ reset.addEventListener('click', function(){
 });
 
 letsGo.addEventListener('click',function(){
+  event.preventDefault();
   if(animate){
     requestAnimationFrame(flyAnimate);
     animate = false;
