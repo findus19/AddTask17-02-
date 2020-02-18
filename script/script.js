@@ -3,6 +3,7 @@
 let tank = document.querySelector('.tank'),
     human = document.querySelector('.human'),
     reset = document.querySelector('.reset'),
+    letsGo = document.querySelector('.letsGo'),
     count = 0;
 let flyInterval;    
 
@@ -28,7 +29,7 @@ reset.addEventListener('click', function(){
   
 });
 
-document.addEventListener('click',function(){
+letsGo.addEventListener('click',function(){
   if(animate){
     requestAnimationFrame(flyAnimate);
     animate = false;
