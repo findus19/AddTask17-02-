@@ -11,7 +11,7 @@ let flyAnimate = function(){
   flyInterval = requestAnimationFrame(flyAnimate);
   count++;
   human.style.top = count + 'px';
-  human.style.left = count + 100 + 'px';
+  human.style.left = count + 120 + 'px';
   tank.style.left = count * 3.8 + 'px';
   if(count > 410){
     cancelAnimationFrame(flyInterval);
@@ -30,7 +30,6 @@ reset.addEventListener('click', function(){
 });
 
 letsGo.addEventListener('click',function(){
-  event.preventDefault();
   if(animate){
     requestAnimationFrame(flyAnimate);
     animate = false;
