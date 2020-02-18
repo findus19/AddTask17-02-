@@ -1,0 +1,6 @@
+.tank, .human{
+  position: relative;
+};
+body {
+  background: url("../AddTask17(02)/img/midle.png") center no-repeat;
+}
